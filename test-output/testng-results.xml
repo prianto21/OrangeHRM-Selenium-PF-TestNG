@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-28T10:46:56 WIB" name="Suite" finished-at="2022-10-28T10:47:23 WIB" duration-ms="27167">
+    <groups>
+    </groups>
+    <test started-at="2022-10-28T10:46:56 WIB" name="Test 1 with chrome" finished-at="2022-10-28T10:47:23 WIB" duration-ms="27167">
+      <class name="com.ormorange.test.loginTest">
+        <test-method is-config="true" signature="preSetup(java.lang.String)[pri:0, instance:com.ormorange.test.loginTest@76f2bbc1]" started-at="2022-10-28T10:46:56 WIB" name="preSetup" finished-at="2022-10-28T10:47:07 WIB" duration-ms="11180" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preSetup -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ormorange.test.loginTest@76f2bbc1]" started-at="2022-10-28T10:47:07 WIB" name="setUp" finished-at="2022-10-28T10:47:08 WIB" duration-ms="828" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TestLogin()[pri:0, instance:com.ormorange.test.loginTest@76f2bbc1]" started-at="2022-10-28T10:47:08 WIB" name="TestLogin" finished-at="2022-10-28T10:47:11 WIB" duration-ms="3292" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestLogin -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.ormorange.test.loginTest@76f2bbc1]" started-at="2022-10-28T10:47:11 WIB" name="cleanUp" finished-at="2022-10-28T10:47:11 WIB" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="postCleanUp()[pri:0, instance:com.ormorange.test.loginTest@76f2bbc1]" started-at="2022-10-28T10:47:11 WIB" name="postCleanUp" finished-at="2022-10-28T10:47:11 WIB" duration-ms="93" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCleanUp -->
+      </class> <!-- com.ormorange.test.loginTest -->
+      <class name="com.ormorange.test.DashboardTest">
+        <test-method is-config="true" signature="preSetup(java.lang.String)[pri:0, instance:com.ormorange.test.DashboardTest@68e965f5]" started-at="2022-10-28T10:47:11 WIB" name="preSetup" finished-at="2022-10-28T10:47:19 WIB" duration-ms="7278" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preSetup -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ormorange.test.DashboardTest@68e965f5]" started-at="2022-10-28T10:47:19 WIB" name="setUp" finished-at="2022-10-28T10:47:19 WIB" duration-ms="777" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="cekDashboard()[pri:0, instance:com.ormorange.test.DashboardTest@68e965f5]" started-at="2022-10-28T10:47:19 WIB" name="cekDashboard" finished-at="2022-10-28T10:47:23 WIB" duration-ms="3586" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cekDashboard -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.ormorange.test.DashboardTest@68e965f5]" started-at="2022-10-28T10:47:23 WIB" name="cleanUp" finished-at="2022-10-28T10:47:23 WIB" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="postCleanUp()[pri:0, instance:com.ormorange.test.DashboardTest@68e965f5]" started-at="2022-10-28T10:47:23 WIB" name="postCleanUp" finished-at="2022-10-28T10:47:23 WIB" duration-ms="84" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCleanUp -->
+      </class> <!-- com.ormorange.test.DashboardTest -->
+    </test> <!-- Test 1 with chrome -->
+  </suite> <!-- Suite -->
+</testng-results>
