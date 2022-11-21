@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ormorange.test.loginTest">
+      <class name="com.ormorange.test.PimTest">
         <methods>
           <include name="cleanUp"/>
           <include name="postCleanUp"/>
           <include name="preSetup"/>
-          <include name="TestLogin"/>
           <include name="setUp"/>
+          <include name="SearchTest"/>
         </methods>
-      </class> <!-- com.ormorange.test.loginTest -->
+      </class> <!-- com.ormorange.test.PimTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

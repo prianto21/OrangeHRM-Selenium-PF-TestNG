@@ -27,7 +27,7 @@ public class loginTest extends BaseTest {
 		
 		String Expect = "OrangeHRM";
 		String ActualTitle = driver.getTitle();
-		AssertJUnit.assertEquals(ActualTitle, Expect);
+		assertEquals(ActualTitle, Expect);
 
 	}
 	

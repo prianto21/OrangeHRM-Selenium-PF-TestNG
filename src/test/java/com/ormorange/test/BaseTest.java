@@ -18,6 +18,9 @@ import org.testng.annotations.Test;
 
 import com.orm.pages.DashboardPage;
 import com.orm.pages.LoginPage;
+import com.orm.pages.PimPage;
+import com.orm.pages.RegisterPage;
+import com.orm.pages.ResetPasswordPage;
 
 import CommonLibs.CommonDriver;
 
@@ -30,20 +33,25 @@ public class BaseTest {
 //	declare all pages
 	LoginPage loginpage;
 	DashboardPage dashboardpage;
+	RegisterPage register;
+	ResetPasswordPage resetpass;
+	PimPage pim;
 	@Parameters("browserType")
 	@BeforeClass
-	public void preSetup(String browserType) throws Exception {
+	public void preSetup() throws Exception {
 //		browser open and acces url
 //		openBrowser("firefox");
-//		openBrowser("chrome");
-		openBrowser(browserType);
-		navigateToUrl("https://opensource-demo.orangehrmlive.com");
+		openBrowser("chrome");
+//		openBrowser(browserType);
+//		navigateToUrl("http://tutorialsninja.com/demo/");
+		navigateToUrl("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+		
 		driver = cmnDriver.getDriver();
 //		call page
 		pageInitialization();
 //		maximaze window and wait element
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	}
 
 	
@@ -51,8 +59,6 @@ public class BaseTest {
 	public void setUp() {
 
 		System.out.println("before method");
-//		login
-		loginpage.signIn("admin", "admin123");
 
 	}
 
@@ -64,6 +70,7 @@ public class BaseTest {
 	@AfterClass
 	public void postCleanUp() {
 		cmnDriver.closeBrowser();
+		
 	}
 	
 	private void openBrowser(String browserType) throws Exception{
@@ -79,6 +86,8 @@ public class BaseTest {
 	private void pageInitialization() {
 		loginpage = new LoginPage(driver);
 		dashboardpage = new DashboardPage(driver);
-		
+		register=new RegisterPage(driver);
+		resetpass=new ResetPasswordPage(driver);
+		pim=new PimPage(driver);
 	}
 }

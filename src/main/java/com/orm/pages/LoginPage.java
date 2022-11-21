@@ -20,6 +20,10 @@ public class LoginPage {
 	@FindBy(xpath = "//button[normalize-space()='Login']")
 	private WebElement btn_login;
 	
+	@FindBy(xpath = "//p[@class='oxd-text oxd-text--p orangehrm-login-forgot-header']")
+	private WebElement link_forgotPassword;
+	
+	
 	public LoginPage(WebDriver driver) {
 //		this.driver = driver;
 		PageFactory.initElements(driver, this);
@@ -31,5 +35,9 @@ public class LoginPage {
 		passwordField.sendKeys(password);
 		btn_login.click();
 //		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	}
+	
+	public void clickForgotPassword() {
+		link_forgotPassword.click();
 	}
 }
