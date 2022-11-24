@@ -5,11 +5,11 @@
     <classes>
       <class name="com.ormorange.test.PimTest">
         <methods>
+          <include name="UpdateEmployeDetailTest"/>
           <include name="cleanUp"/>
           <include name="postCleanUp"/>
           <include name="preSetup"/>
           <include name="setUp"/>
-          <include name="SearchTest"/>
         </methods>
       </class> <!-- com.ormorange.test.PimTest -->
     </classes>

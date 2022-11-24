@@ -69,7 +69,7 @@ public class BaseTest {
 
 	@AfterClass
 	public void postCleanUp() {
-		cmnDriver.closeBrowser();
+//		cmnDriver.closeBrowser();
 		
 	}
 	
